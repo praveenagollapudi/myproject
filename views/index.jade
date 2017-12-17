@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	.frame
+		.center
+			.bar
+			.title Drop file to upload
+			.dropzone
+				.content
+					img.upload(src='/images/upload.svg')
+					span.filename
+					input.input(type='file')
+			img.syncing(src='/images/syncing.svg')
+			img.done(src='/images/checkmark.svg')
+			.upload-btn Upload file
